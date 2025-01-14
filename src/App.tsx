@@ -7,6 +7,7 @@ import { CardWithForm } from './components/card/Cards';
 import { TableDemo } from './components/card/tables';
 import { DataTableDemo } from './components/card/DataTables';
 import { CarouselDemo } from './components/card/Carousel';
+import { CarouselSpacing } from './components/card/Carousel2';
 
 function App() {
   const [date, setDate] = React.useState<Date | undefined>(new Date());
@@ -35,18 +36,21 @@ function App() {
           <div className='my-5'>
             <CardWithForm />
           </div>
-          <div className='py-2'>
-            <p className='text-2xl'>Table</p>
-            <TableDemo />
-          </div>
         </div>
+        <div className='py-2'>
+          <p className='text-2xl'>Table</p>
+          <TableDemo />
+        </div>
+
         <div className='my-2'>
           <p className='text-2xl'>Data Table</p>
           <DataTableDemo />
         </div>
+
         <div className='my-2'>
           <p className='text-2xl'>Carousel</p>
-          <CarouselDemo/>
+          <CarouselDemo />
+          <CarouselSpacing/>
         </div>
       </div>
     </>
